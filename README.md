@@ -20,6 +20,16 @@ Preparing for the coding interview.
 | Vectors / ArrayLists | Tree Insert / Find / e.t.c | Big-O Time              |
 | Hash Tables          |                            |                         |
 
+**Powers of 2 Table**
+
+## Five steps to a technical question
+
+1. Ask your interviewer questions to resolve ambiguity.
+2. Design an Algorithm.
+3. Write pseudocode first, but make sure to tell your interviewer that you'll eventually write "real" code.
+4. Write your code at a moderate pace.
+5. Test your code and *carefully* fix any mistakes.
+
 ## Useful links
 
 [CareerCup.com](http://www.careercup.com/?from=@)
