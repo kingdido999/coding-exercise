@@ -1,11 +1,11 @@
-/**
+/*
  * 1.1
  * Implement an algorithm to determine if a string has all unique 
  * characters. What if you cannot use additional data structures?
-*/
+ */
 
 public class UniqueCharacters {
-	public static boolean hasUniqueChars(String s) {
+	private static boolean hasUniqueChars(String s) {
 		for (int i = 0; i < s.length(); i++) {
 			char currentChar = s.charAt(i);
 
@@ -22,7 +22,8 @@ public class UniqueCharacters {
 	public static void main(String[] args) {
 		String s1 = "aabc";
 		String s2 = "abc";
-		System.out.println(hasUniqueChars(s1));
-		System.out.println(hasUniqueChars(s2));
+
+		System.out.println(s1 + ": " + hasUniqueChars(s1));
+		System.out.println(s2 + ": " + hasUniqueChars(s2));
 	}
 }
