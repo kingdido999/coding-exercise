@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class CrackingtheCodingInterview {
 	/*
 	 * 1.1
@@ -71,6 +73,45 @@ public class CrackingtheCodingInterview {
 		else return s;
 	}	
 
+	/*
+	 * 2.1
+	 * Write code to remove duplicates from an unsorted linked list.
+	 * FOLLOW UP
+	 * How would you solve this problem if a temporary buffer is not allowed?
+	 */
+
+	private static Node removeDuplicates(Node head) {
+		Hashtable table = new Hashtable();
+		Node n = head;
+		Node previous = null;
+
+		while (n != null) {
+			if (table.containsKey(n.data)) {
+				previous.next = n.next;
+			} else {
+				table.put(n.data, true);
+				previous = n;
+			}
+
+			n = n.next;
+		}
+
+
+		return head;
+	}
+
+	private static void printNode(Node head) {
+		Node n = head;
+		while (n != null) {
+			System.out.print(n.data);
+			System.out.print("-->");
+			n = n.next;
+		}
+
+		System.out.print("null");
+		System.out.println();
+	}
+
 	public static void main(String[] args) {
 		// Arrays and Strings
 		System.out.println("1.1");
@@ -85,7 +126,14 @@ public class CrackingtheCodingInterview {
 		System.out.println("1.5");
 		System.out.println(compressString("aabcccccaa"));
 		System.out.println(compressString("abc"));	
-		System.out.println();		
+		System.out.println();
+
+		// Linked List
+		System.out.println("2.1");
+		Node head = new Node(1, new Node(2, new Node(1, new Node(2, new Node(3)))));
+		printNode(head);
+		removeDuplicates(head);
+		printNode(head);		
 	}
 
 }
