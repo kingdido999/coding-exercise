@@ -96,8 +96,24 @@ public class CrackingtheCodingInterview {
 			n = n.next;
 		}
 
-
 		return head;
+	}
+
+	/*
+	 * 2.3
+	 * Implement an algorithm to delete a node in the middle of a singly 
+	 * linked list, given only access to that node.
+	 */
+
+	private static boolean deleteNode(Node head) {
+		if (head == null || head.next == null) {
+			return false;
+		}
+
+		Node next = head.next;
+		head.data = next.data;
+		head.next = next.next;
+		return true;
 	}
 
 	private static void printNode(Node head) {
@@ -133,7 +149,14 @@ public class CrackingtheCodingInterview {
 		Node head = new Node(1, new Node(2, new Node(1, new Node(2, new Node(3)))));
 		printNode(head);
 		removeDuplicates(head);
-		printNode(head);		
+		printNode(head);
+
+		System.out.println("2.3");
+		Node head2 = new Node(1, new Node(2, new Node(3, new Node(4, new Node(5)))));
+		Node middle = head2.next.next;
+		printNode(head2);
+		deleteNode(middle);
+		printNode(head2);						
 	}
 
 }
