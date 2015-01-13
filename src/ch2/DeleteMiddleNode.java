@@ -11,9 +11,9 @@
 package ch2;
 
 public class DeleteMiddleNode {
-	public void deleteMiddleNode(Node m) {
+	public void deleteMiddleNode(Node<Object> m) {
 		if (m != null && m.next != null) {
-			Node next = m.next;
+			Node<Object> next = m.next;
 			m.data = next.data;
 			m.next = next.next;
 		}

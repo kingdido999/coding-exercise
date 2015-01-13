@@ -36,16 +36,16 @@ public class Main {
 
 	@Test
 	public void testNodeSize() {
-		Node n = new Node(1, new Node(2, new Node(3)));
+		Node<Object> n = new Node<Object>(new Object[]{1, 2, 3});
 
 		assertEquals(n.size(), 3);
 	}
 
 	@Test
 	public void testNodeEquals() {
-		Node p = new Node(1, new Node(2, new Node(3)));
-		Node q = new Node(1, new Node(2, new Node(3)));
-		Node r = new Node(2, new Node(2, new Node(3)));
+		Node<Object> p = new Node<Object>(new Object[]{1, 2, 3});
+		Node<Object> q = new Node<Object>(new Object[]{1, 2, 3});
+		Node<Object> r = new Node<Object>(new Object[]{2, 2, 3});
 
 		assertTrue(p.equals(q));
 		assertFalse(p.equals(r));
@@ -54,8 +54,8 @@ public class Main {
 	@Test
 	public void testRemoveDuplicates() {
 		RemoveDuplicates t = new RemoveDuplicates();
-		Node head = new Node(1, new Node(2, new Node(1, new Node(2, new Node(3)))));
-		Node expected = new Node(1, new Node(2, new Node(3)));
+		Node<Object> head = new Node<Object>(new Object[]{1, 2, 1, 2, 3});
+		Node<Object> expected = new Node<Object>(new Object[]{1, 2, 3});
 
 		assertTrue(t.removeDuplicates(head).equals(expected));
 	}
@@ -63,12 +63,22 @@ public class Main {
 	@Test
 	public void testDeleteMiddleNode() {
 		DeleteMiddleNode t = new DeleteMiddleNode();
-		Node head = new Node("a", new Node("b", new Node("c", new Node("d", new Node("e")))));
-		Node middle = head.next().next();
-		Node expected = new Node("a", new Node("b", new Node("d", new Node("e"))));
+		Node<Object> head = new Node<Object>(new Object[]{"a", "b", "c", "d", "e"});
+		Node<Object> middle = head.next().next();
+		Node<Object> expected = new Node<Object>(new Object[]{"a", "b", "d", "e"});
 
 		t.deleteMiddleNode(middle);
-		
+
 		assertTrue(head.equals(expected));
+	}
+
+	@Test
+	public void testFromKtoLast() {
+		FromKtoLast t = new FromKtoLast();
+		Node<Object> head = new Node<Object>(new Object[]{1, 2, 3, 4});
+		int k = 2;
+		Node<Object> expected = new Node<Object>(new Object[]{3, 4});
+
+		assertTrue(t.fromKtoLast(head, k).equals(expected));
 	}
 }

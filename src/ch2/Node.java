@@ -1,25 +1,47 @@
 package ch2;
 public class Node<T> {
-	Node next = null;
+	Node<T> next = null;
 	T data;
+
+	public Node() {
+		data = null;
+		next = null;
+	}
 
 	public Node(T d) {
 		data = d;
 		next = null;
 	}
 
-	public Node(T d, Node n) {
+	public Node(T d, Node<T> n) {
 		data = d;
 		next = n;
 	}
 
-	public Node next() {
+	public Node(T[] array) {
+		Node<T> n = new Node<T>();
+		Node<T> head = n;
+
+		for (int i = 0; i < array.length; i++) {
+			n.data = array[i];
+
+			if (i + 1 < array.length) {
+				n.next = new Node<T>(array[i+1]);
+				n = n.next;
+			}
+		}
+
+		data = head.data;
+		next = head.next;
+	}
+
+	public Node<T> next() {
 		return next;
 	}
 
 	public int size() {
 		int count = 1;
-		Node copy = this;
+		Node<T> copy = this;
 
 		while (copy.next != null) {
 			count++;
@@ -30,8 +52,8 @@ public class Node<T> {
 	}
 
 	public void appendToTail(T d) {
-		Node end = new Node(d);
-		Node n = this;
+		Node<T> end = new Node<T>(d);
+		Node<T> n = this;
 
 		while (n.next != null) {
 			n = n.next;
@@ -40,13 +62,13 @@ public class Node<T> {
 		n.next = end;
 	}
 
-	public boolean equals(Node that) {
+	public boolean equals(Node<T> that) {
 		if (this.size() != that.size()) {
 			return false;
 		}
 
-		Node thisCopy = this;
-		Node thatCopy = that;
+		Node<T> thisCopy = this;
+		Node<T> thatCopy = that;
 
 		if (thisCopy.data != thatCopy.data) {
 			return false;

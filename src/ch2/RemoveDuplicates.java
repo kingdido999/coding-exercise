@@ -10,10 +10,10 @@ package ch2;
 import java.util.Hashtable;
 
 public class RemoveDuplicates {
-	public Node removeDuplicates(Node head) {
-		Hashtable table = new Hashtable();
-		Node n = head;
-		Node previous = null;
+	public Node<Object> removeDuplicates(Node<Object> head) {
+		Hashtable<Object, Object> table = new Hashtable<Object, Object>();
+		Node<Object> n = head;
+		Node<Object> previous = null;
 
 		while (n != null) {
 			if (table.containsKey(n.data)) {
