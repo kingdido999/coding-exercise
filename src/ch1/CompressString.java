@@ -26,9 +26,7 @@ public class CompressString {
 			i += count - 1;
 			result += Integer.toString(count);
 		}
-
-		// if (result.length() < s.length()) return result;
-		// else return s;
+		
 		return (result.length() < s.length()) ? result : s;
 	}	
 }
