@@ -13,6 +13,8 @@ public class FromKtoLast {
 		for (int i = 0; i < k; i++) {
 			if (copy.next != null) {
 				copy = copy.next;
+			} else {
+				return null;
 			}
 		}
 

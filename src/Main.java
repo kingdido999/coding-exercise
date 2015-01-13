@@ -76,9 +76,11 @@ public class Main {
 	public void testFromKtoLast() {
 		FromKtoLast t = new FromKtoLast();
 		Node<Object> head = new Node<Object>(new Object[]{1, 2, 3, 4});
-		int k = 2;
-		Node<Object> expected = new Node<Object>(new Object[]{3, 4});
+		Node<Object> expected1 = new Node<Object>(new Object[]{3, 4});
+		Node<Object> expected2 = new Node<Object>(new Object[]{1, 2, 3, 4});
 
-		assertTrue(t.fromKtoLast(head, k).equals(expected));
+		assertTrue(t.fromKtoLast(head, 2).equals(expected1));
+		assertTrue(t.fromKtoLast(head, 0).equals(expected2));
+		assertNull(t.fromKtoLast(head, 4));
 	}
 }

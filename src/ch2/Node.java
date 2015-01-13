@@ -19,20 +19,17 @@ public class Node<T> {
 	}
 
 	public Node(T[] array) {
-		Node<T> n = new Node<T>();
-		Node<T> head = n;
+		if (array.length > 0) {
+			data = array[0];
+			next = null;
 
-		for (int i = 0; i < array.length; i++) {
-			n.data = array[i];
-
-			if (i + 1 < array.length) {
-				n.next = new Node<T>(array[i+1]);
-				n = n.next;
-			}
+			for (int i = 1; i < array.length; i++) {
+				this.appendToTail(array[i]);
+			}		
+		} else {
+			data = null;
+			next = null;
 		}
-
-		data = head.data;
-		next = head.next;
 	}
 
 	public Node<T> next() {
