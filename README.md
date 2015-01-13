@@ -14,7 +14,8 @@ Preparing for the coding interview.
 | Data Structures      | Algorithms                 | Concepts                |
 |----------------------|----------------------------|-------------------------|
 | Linked Lists         | Breadth First Search       | Bit Manipulation        |
-| Tries                | Binary Search              | Singleton Design Patter |
+| Binary Trees         | Depth First Search         | Singleton Design Patter |
+| Tries                | Binary Search              | Factory Design Patter   |
 | Stacks               | Merge Sort                 | Memory (Stack vs. Heap) |
 | Queues               | Quick Sort                 | Recursion               |
 | Vectors / ArrayLists | Tree Insert / Find / e.t.c | Big-O Time              |
