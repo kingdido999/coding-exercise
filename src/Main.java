@@ -1,8 +1,9 @@
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 import ch1.*;
 import ch2.*;
-import static org.junit.Assert.*;
+import ch11.*;
 
 public class Main {
 
@@ -82,5 +83,22 @@ public class Main {
 		assertTrue(t.fromKtoLast(head, 2).equals(expected1));
 		assertTrue(t.fromKtoLast(head, 0).equals(expected2));
 		assertNull(t.fromKtoLast(head, 4));
+	}
+
+	@Test
+	public void testMerge() {
+		Merge t = new Merge();
+		int[] a = new int[8];
+		int[] b = {2, 3, 4};
+		int[] expected = {1, 2, 2, 3, 3, 4, 4, 5};
+		int lastA = 5;
+		int lastB = 3;
+
+		// a = {1, 2, 3, 4, 5, null, null, null}
+		for (int i = 0; i < lastA; i++) {
+			a[i] = i + 1;
+		}
+
+		assertArrayEquals(t.merge(a, b, lastA, lastB), expected);
 	}
 }
