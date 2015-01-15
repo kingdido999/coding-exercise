@@ -113,4 +113,23 @@ public class Main {
 
 		assertEquals(t.findString(str, a, start, end), expected);
 	}
+
+	@Test
+	public void testSearchMatrix() {
+		SearchMatrix t = new SearchMatrix();
+		int[][] m = {
+			{15, 20, 40, 85},
+			{20, 35, 80, 95},
+			{30, 55, 95, 105},
+			{40, 80, 100, 120}
+		};
+
+		int elem = 55;
+
+		Tuple<Integer, Integer> result = t.searchMatrix(m, elem);
+		Tuple<Integer, Integer> expected = new Tuple<Integer, Integer>(2, 1);
+
+		assertEquals(result.x, expected.x);
+		assertEquals(result.y, expected.y);
+	}
 }
