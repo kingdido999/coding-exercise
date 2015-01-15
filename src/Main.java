@@ -101,4 +101,16 @@ public class Main {
 
 		assertArrayEquals(t.merge(a, b, lastA, lastB), expected);
 	}
+
+	@Test
+	public void testFindString() {
+		FindString t = new FindString();
+		String[] a = {"at", "", "", "", "ball", "", "", "car", "", "", "dad", "", ""};
+		String str = "ball";
+		int start = 0;
+		int end = a.length - 1;
+		int expected = 4;
+
+		assertEquals(t.findString(str, a, start, end), expected);
+	}
 }
