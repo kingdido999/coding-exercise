@@ -48,6 +48,15 @@ public class Main {
 	}
 
 	@Test
+	public void testFormatRGB() {
+		FormatRGB t = new FormatRGB();
+		int r = 255, g = 255, b = 255;
+		String expected = "FFFFFF";
+
+		assertEquals(t.formatRGB(r, g, b), expected);
+	}
+
+	@Test
 	public void testHasUniqueChars() {
 		HasUniqueChars t = new HasUniqueChars();
 
