@@ -29,13 +29,22 @@ public class Main {
 		assertEquals(t.fib(n2), expected2);
 	}
 
-	@Test
-	public void testSumFile() {
-		SumFile t = new SumFile();
-		String filename = "file.txt";
-		int expected = 1 + 2 + 3 + 4 + 5;
+	// @Test
+	// public void testSumFile() {
+	// 	SumFile t = new SumFile();
+	// 	String filename = "file.txt";
+	// 	int expected = 1 + 2 + 3 + 4 + 5;
 
-		assertEquals(t.sumFile(filename), expected);
+	// 	assertEquals(t.sumFile(filename), expected);
+	// }
+
+	@Test
+	public void testLargest() {
+		Largest t = new Largest();
+		int[] input = {1, 2, 3, 4, 5};
+		int expected = 5;
+
+		assertEquals(t.largest(input), expected);
 	}
 
 	@Test
