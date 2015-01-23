@@ -1,11 +1,21 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import extra.*;
 import ch1.*;
 import ch2.*;
 import ch11.*;
 
 public class Main {
+
+	@Test
+	public void testReverse() {
+		Reverse t = new Reverse();
+		String s = "abc";
+		String expected = "cba";
+
+		assertEquals(t.reverse(s), expected);
+	}
 
 	@Test
 	public void testHasUniqueChars() {
@@ -132,4 +142,6 @@ public class Main {
 		assertEquals(result.x, expected.x);
 		assertEquals(result.y, expected.y);
 	}
+
+
 }
