@@ -30,6 +30,15 @@ public class Main {
 	}
 
 	@Test
+	public void testSumFile() {
+		SumFile t = new SumFile();
+		String filename = "file.txt";
+		int expected = 1 + 2 + 3 + 4 + 5;
+
+		assertEquals(t.sumFile(filename), expected);
+	}
+
+	@Test
 	public void testHasUniqueChars() {
 		HasUniqueChars t = new HasUniqueChars();
 
