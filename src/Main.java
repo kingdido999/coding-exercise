@@ -18,7 +18,7 @@ public class Main {
 	}
 
 	@Test
-	public void testFib() {
+	public void testFibRecursive() {
 		Fib t = new Fib();
 		int n1 = 1;
 		int n2 = 8;
@@ -27,6 +27,18 @@ public class Main {
 
 		assertEquals(t.fib(n1), expected1);
 		assertEquals(t.fib(n2), expected2);
+	}
+
+	@Test
+	public void testFibNonRecursive() {
+		Fib t = new Fib();
+		int n1 = 1;
+		int n2 = 8;
+		int expected1 = 1;
+		int expected2 = 21;
+
+		assertEquals(t.fib2(n1), expected1);
+		assertEquals(t.fib2(n2), expected2);
 	}
 
 	// @Test
