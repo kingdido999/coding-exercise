@@ -1,7 +1,7 @@
 package ch2;
 public class Node<T> {
-	Node<T> next = null;
-	T data;
+	public Node<T> next = null;
+	public T data;
 
 	public Node() {
 		data = null;
