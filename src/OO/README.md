@@ -60,7 +60,7 @@ Whenever there is no ownership in place, we regard such a relationship as just a
 - can only be used as a super-class for other classes that extend the abstract class.
 - a class can inherit only from one abstract class
 
-There are quite a big difference between an interface and an abstract class, even though both look similar.
+There are quite a big difference between an **interface** and an **abstract class**, even though both look similar.
 
 - Interface definition begins with a keyword interface so it is of type interface
 - Abstract classes are declared with the abstract keyword so it is of type class
@@ -78,7 +78,7 @@ There are quite a big difference between an interface and an abstract class, eve
 - Abstract class can be used when implementing framework
 - Abstract classes are an excellent way to create planned inheritance hierarchies and also to use as non-leaf classes in class hierarchies.
 
-**Polymorphism**: the ability to request that teh same operations be performed by a wide range of different types of things.
+**Polymorphism**: the ability to request that the same operations be performed by a wide range of different types of things.
 
 **Method Overloading**: the ability to define several methods all with the same name.
 
@@ -118,3 +118,13 @@ Use case diagrams are helpful in three areas:
 A **class diagram** gives an overview of a system by showing its classes and the relationships among them.
 
 A **sequence diagram** shows object interactions arranged in a time sequence.
+
+#### Approaches
+
+- Object-oriented programming
+- Waterfall development
+- Spiral development
+- Rapid application development
+- Scrum
+- Rational Unified Process
+- Agile Unified Process
