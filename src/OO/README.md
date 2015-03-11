@@ -26,21 +26,21 @@
 - method signatures (what's included in one)
 - method visibility (e.g. public/private/other)
 
-`Object`: state and beharvior.
+**Object**: state and beharvior.
 
-`Class`: the blue print from which individual objects are created. A class is composed of a name, attributes, and operations.
+**Class**: the blue print from which individual objects are created. A class is composed of a name, attributes, and operations.
 
-`Inheritance`: the ability of a new class to be created, from an existing class by extending it. Allows classes to inherit commonly used state and behavior from other classes.
+**Inheritance**: the ability of a new class to be created, from an existing class by extending it. Allows classes to inherit commonly used state and behavior from other classes.
 
-`Interface`: a group of related methods with empty bodies (could be implemented by other classes).
+**Interface**: a group of related methods with empty bodies (could be implemented by other classes).
 
 A class and an interface are two different types (conceptually). Theoretically a class emphasis the idea of encapsulation, while an interface emphasis the idea of abstraction (by suppressing the details of the implementation). The two poses a clear separation from one to another.
 
-`Package`: a namespace that organizes a set of related classes and interfaces.
+**Package**: a namespace that organizes a set of related classes and interfaces.
 
-`Encapsulation`: pack data and functions into a single component. Hide how a class does its business, while allowing other classes to make requests of it.
+**Encapsulation**: pack data and functions into a single component. Hide how a class does its business, while allowing other classes to make requests of it.
 
-`Association`: a relationship between two classes. It allows one object instance to cause another to perform an action on its behalf.
+**Association**: a relationship between two classes. It allows one object instance to cause another to perform an action on its behalf.
 
 Association is a *has-a* relationship between two classes where there is no particular ownership in place. It is just the connectivity between the two classes. When you define a variable of one class in another class, you enable first to associate functions and properties of the second class. Then again  both Aggregation and Composition are types of Association.
 
@@ -50,11 +50,11 @@ On the other hand, Composition is a strong type of Association with full ownersh
 
 Whenever there is no ownership in place, we regard such a relationship as just an Association and we simply use the *has-a* term, or sometimes the verb describing the relationship. For example, a teacher *has-a* or *teaches* a student. There is no ownership between the teacher and the student, and each has their own life-cycle.
 
-`Abstraction`: an emphasis on the idea, qualities and properties rather than the particulars (a suppression of detail).
+**Abstraction**: an emphasis on the idea, qualities and properties rather than the particulars (a suppression of detail).
 
-`Generalization`: reduces complexity by replacing multiple entities which perform similar functions with a single construct.
+**Generalization**: reduces complexity by replacing multiple entities which perform similar functions with a single construct.
 
-`Abstract class`:
+**Abstract class**:
 
 - cannot be instantiated
 - can only be used as a super-class for other classes that extend the abstract class.
@@ -78,11 +78,11 @@ There are quite a big difference between an interface and an abstract class, eve
 - Abstract class can be used when implementing framework
 - Abstract classes are an excellent way to create planned inheritance hierarchies and also to use as non-leaf classes in class hierarchies.
 
-`Polymorphism`: the ability to request that teh same operations be performed by a wide range of different types of things.
+**Polymorphism**: the ability to request that teh same operations be performed by a wide range of different types of things.
 
-`Method Overloading`: the ability to define several methods all with the same name.
+**Method Overloading**: the ability to define several methods all with the same name.
 
-`Method Overriding`: allows a subclass to override a specific implementation of a method that is already provided by one of its super-classes.
+**Method Overriding**: allows a subclass to override a specific implementation of a method that is already provided by one of its super-classes.
 
 ## SDLC (Software Development Life Cycle)
 
@@ -107,7 +107,7 @@ UML is used to specify, visualize, modify, construct and document the artifacts 
     - Sequence
     - Activity
 
-A `use case` is a summary of scenarios for a single task or goal. An `actor` is who or what initiates the events involved in that task.
+A **use case** is a summary of scenarios for a single task or goal. An **actor** is who or what initiates the events involved in that task.
 
 Use case diagrams are helpful in three areas:
 
@@ -115,6 +115,6 @@ Use case diagrams are helpful in three areas:
 - Communicating with clients
 - Generating test cases
 
-A `class diagram` gives an overview of a system by showing its classes and the relationships among them.
+A **class diagram** gives an overview of a system by showing its classes and the relationships among them.
 
-A `sequence diagram` shows object interactions arranged in a time sequence.
+A **sequence diagram** shows object interactions arranged in a time sequence.
