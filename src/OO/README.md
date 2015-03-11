@@ -86,6 +86,8 @@ There are quite a big difference between an **interface** and an **abstract clas
 
 ## SDLC (Software Development Life Cycle)
 
+SDLC is the process of developing software through business needs, analysis, design, implementation and maintenance.
+
 #### Phases
 
 - Investigation: business opportunities and problems are identified, and information technology solutions are discussed.
