@@ -130,3 +130,11 @@ A **sequence diagram** shows object interactions arranged in a time sequence.
 - Scrum
 - Rational Unified Process
 - Agile Unified Process
+
+## Agile Software Development
+
+- Emphasized close collaboration between the programmer team and business experts
+- Face-to-face communication (as more efficient than written documentation)
+- Frequent delivery of new deployable business value
+- Tight, self-organizing teams
+- Ways to craft the code and the team such that the inevitable requirements churn was not a crisis.
