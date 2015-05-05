@@ -26,7 +26,7 @@
 - method signatures (what's included in one)
 - method visibility (e.g. public/private/other)
 
-**Object**: state and beharvior.
+**Object**: state and behavior.
 
 **Class**: the blue print from which individual objects are created. A class is composed of a name, attributes, and operations.
 
@@ -78,7 +78,7 @@ There are quite a big difference between an **interface** and an **abstract clas
 - Abstract class can be used when implementing framework
 - Abstract classes are an excellent way to create planned inheritance hierarchies and also to use as non-leaf classes in class hierarchies.
 
-**Polymorphism**: the ability to request that the same operations be performed by a wide range of different types of things.
+**Polymorphism**: Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
 
 **Method Overloading**: the ability to define several methods all with the same name.
 
