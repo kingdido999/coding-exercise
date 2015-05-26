@@ -81,7 +81,7 @@ public class Main {
 		ReplaceString t = new ReplaceString();
 
 		assertEquals(
-			t.replaceString("Mr John Smith    ", 13), 
+			t.replaceString("Mr John Smith    ", 13),
 			"Mr%20John%20Smith"
 			);
 	}
@@ -91,9 +91,27 @@ public class Main {
 		CompressString t = new CompressString();
 
 		assertEquals(
-			t.compressString("aabcccccaaa"), 
+			t.compressString("aabcccccaaa"),
 			"a2b1c5a3"
 			);
+	}
+
+	@Test
+	public void testIsPermutation() {
+		IsPermutation t = new IsPermutation();
+
+		assertTrue(t.isPermutation("abcdef", "fedcba"));
+		assertFalse(t.isPermutation("abc", "abb"));
+		assertFalse(t.isPermutation("abcc", "abc"));
+	}
+
+	@Test
+	public void testPermutationSolution() {
+		IsPermutation t = new IsPermutation();
+
+		assertTrue(t.permutation("abcdef", "fedcba"));
+		assertFalse(t.permutation("abc", "abb"));
+		assertFalse(t.permutation("abcc", "abc"));
 	}
 
 	@Test
@@ -111,7 +129,7 @@ public class Main {
 
 		assertTrue(p.equals(q));
 		assertFalse(p.equals(r));
-	} 
+	}
 
 	@Test
 	public void testRemoveDuplicates() {
